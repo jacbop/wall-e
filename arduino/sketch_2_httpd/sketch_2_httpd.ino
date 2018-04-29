@@ -37,8 +37,6 @@ void grind() {
     millis = 20000;
   }
   digitalWrite(pin_relay, true);
-  Serial.println(server.arg(0));
-  Serial.println(millis);
   Serial.println(WiFi.localIP());
   server.send(200, "OK");
   delay(millis);

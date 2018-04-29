@@ -1,3 +1,5 @@
+Everything so far done in browser. Should pull down here with a publish step.
+
 ## Mock bin webserver
 Our lambda is going to call out to our ESP-8266 Wifi enabled microcontroller, but we want
 a simple mock to validate that the lambda is functioning properly first.
