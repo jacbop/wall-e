@@ -18,7 +18,7 @@ void setup() {
   }
   Serial.println("");
   Serial.print("IP Address: ");
-  Serial.print(WiFi.localIP());
+  Serial.println(WiFi.localIP());
 
   server.on("/grind", HTTP_POST, grind);
   server.begin();
@@ -29,11 +29,16 @@ void loop() {
 }
 
 void grind() {
-  unsigned long millis = 20000;
+  unsigned long millis = 0;
   if (server.args() != 0) {
     millis = server.arg(0).toInt();
   }
+  if (millis <= 0) {
+    millis = 20000;
+  }
   digitalWrite(pin_relay, true);
+  Serial.println(server.arg(0));
+  Serial.println(millis);
   Serial.println(WiFi.localIP());
   server.send(200, "OK");
   delay(millis);
