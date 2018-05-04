@@ -1,6 +1,17 @@
 Wilberswitch3000
 
-Voice ==> Alexa ==> Alexa Skills SDK ==> Lambda ==> HTTP ==> ESP-8266 Microcontroller ==> SS Relay ==> Burr Grinder ==> Fresh Ground Coffee
+```
+Voice ==> 
+Alexa Device ==>
+HTTP to AWS ==>
+Alexa Skills SDK ==> 
+Lambda ==> 
+HTTP to Home Network ==> 
+ESP-8266 Microcontroller ==> 
+SS Relay ==> 
+Burr Grinder ==> 
+Fresh Ground Coffee
+```
 
 Cayenne for internet monitoring and reporting
 
